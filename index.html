@@ -3,83 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/portfolio-project-14/favicon.svg" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+  rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
     
     <script type="module" crossorigin src="/portfolio-project-14/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/portfolio-project-14/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/portfolio-project-14/assets/index-3c00e909.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <header>
+    <div class="container header-container">
+  <a class="header-logo-link" href="/">
+      <p> Lloyd <span class="header-logo-span">Jefferson.</span></p>
+  </a>
+  <a class="header-menu-open-btn" 
+  href="/" target="_blank" 
+  rel="noopener noreferrer">=
+      <svg width="24" height="24" class="header-menu-open-icon-">
+          <use href="/portfolio-project-14/"></use>
+      </svg>
+   </a>
+   
+   <nav class="header-nav">
+          <ul class="header-nav-list">
+              <li class="header-nav-list-item">
+                  <a href="#about_me" class="header-nav-list-link" >
+                    About me
+                  </a>
+              </li>
+              <li class="header-nav-list-item">
+                  <a href="#projects" class="header-nav-list-link" >
+                      Projects
+                  </a>
+              </li>
+              <li class="header-nav-list-item">
+                  <a href="#contacts" class="header-nav-list-link" >
+                      Contacts
+                    </a>
+              </li>
+          </ul>
+      </nav>
+</div>
 
+<!--mobile_menu-->
+<div class="mob-container" id="mob-menu">
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/portfolio-project-14/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+<a class="mob-logo-link" href="#">
+  <p> Lloyd <span class="header-logo-span">Jefferson.</span></p>
+</a>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+<a class="mob-menu-close-btn" 
+href="/" target="_blank" 
+rel="noopener noreferrer">X
+<svg width="24" height="24" class="mob-menu-close-icon">
+<use href="/portfolio-project-14/"></use>
+</svg>
+</a>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+<nav class="mob-nav">
+<ul class="mob-nav-list">
+  <li class="mob-nav-list-item">
+      <a href="#about_me" class="mob-nav-list-link" >
+        About me
+      </a>
+  </li>
+  <li class="mob-nav-list-item">
+      <a href="#projects" class="mob-nav-list-link" >
+          Projects
+      </a>
+  </li>
+  <li class="mob-nav-list-item">
+      <a href="#contacts" class="mob-nav-list-link" >
+          Contacts
+        </a>
+  </li>
+</ul>
+</nav>
+</div>
+    </header>
+
+    <main>
+    <section class="hero">
+    <div class="container hero_container">
+<h1>Hello, I am Fullstack developer</h1>
+<a href="/" class="hero-btn">Order the project</a>
+<p class="hero-text">I work with people all over the world to create impressive and functional websites that reflect each client’s unique personality. </p>
+<ul class="hero-list">
+<li class="hero-list-item">
+    <a class="hero-list-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+</li>
+<li class="hero-list-item">
+    <a class="hero-list-link" href="https://www.youtube.com/c/GoIT" target="_blank">Facebook</a>
+</li>
+<li class="hero-list-item">
+    <a class="hero-list-link" href="https://www.facebook.com/goITclub/" target="_blank">Linkedin</a>
+</li>
+<li class="hero-list-item">
+    <a class="hero-list-link" href="https://github.com/Kate-Iva/portfolio-project-14" target="_blank">GitHub</a>
+</li>
+</ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/portfolio-project-14/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
 </section>
+    <section class="about" id="about_me">
+    <div class="container about-container">
+<h2 class="about-tittle">About me</h2>
+<img src="" alt="" class="about-img">
+<h3 class="about-sub-tittle">BIO</h3>
+<p class="about-text">I'm Lloyd Jefferson, a talented programmer specializing in software development. My expertise spans various programming languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking unconventional and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle even the most challenging tasks.</p>
+<p class="about-text">Adaptable to both independent and team-oriented work, I collaborate seamlessly with colleagues, exchanging ideas and finding optimal solutions. My professional maturity enables me to navigate challenges and stressful situations with a calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I actively engage in studying new technologies and practices to stay current with the latest innovations in the field.</p>
+</div>
+</section>
+    <section class="skills">
+    <div class="container skills-container">
+        <h2 class="skills-tittle visually-hidden">Tech skills</h2>
+<h3 class="about-sub-tittle">EDUCATION</h3>
+<ul class="about-list-education">
+    <li class="education-item">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
+    <li class="education-item">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
+    <li class="education-item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+</ul>
+<h3 class="about-sub-tittle">ROLE</h3>
+<ul class="about-list-role">
+    <li class="role-item">Frontend development</li>
+    <li class="role-item">HeadlessCMS, Wordpress</li>
+    <li class="role-item">Blender (enjoy)</li>
+</ul>
+</div>
+</section>
+    <section class="projects" id="projects">
+    <h2 class="projects-tittle">my projects</h2>
+<ul class="projects-list">
+<li class="projects-list-item">
 
+</li>
+</ul>
+</section>
+    
+    <section class="faq">
+    <div class="container faq-container">
+<h2 class="faq-tittle">frequently asked question</h2>
 
+<ul class="faq-list">
+   <li class="faq-list-item">
+      <div class="faq-wrap">
+        <h3 class="faq-sub-tittle">What programming languages ​​are most often used in your project?</h3>
+          <svg width="48" height="48" class="faq-icon">
+            <use href="/portfolio-project-14/"></use>
+          </svg>
+      </div>
+    <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+   </li>
+
+   <li class="faq-list-item">
+    <div class="faq-wrap">
+      <h3 class="faq-sub-tittle">What are the deadlines for the project?</h3>
+        <svg width="48" height="48" class="faq-icon">
+          <use href="/portfolio-project-14/"></use>
+        </svg>
+    </div>
+  <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+ </li>
+
+ <li class="faq-list-item">
+    <div class="faq-wrap">
+      <h3 class="faq-sub-tittle">What payment methods do you accept?</h3>
+        <svg width="48" height="48" class="faq-icon">
+          <use href="/portfolio-project-14/"></use>
+        </svg>
+    </div>
+  <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+ </li>
+
+ <li class="faq-list-item">
+    <div class="faq-wrap">
+      <h3 class="faq-sub-tittle">How can I contact you?</h3>
+        <svg width="48" height="48" class="faq-icon">
+          <use href="/portfolio-project-14/"></use>
+        </svg>
+    </div>
+  <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+ </li>
+
+ <li class="faq-list-item">
+    <div class="faq-wrap">
+      <h3 class="faq-sub-tittle">Do you provide advice or support?</h3>
+        <svg width="48" height="48" class="faq-icon">
+          <use href="/portfolio-project-14/"></use>
+        </svg>
+    </div>
+  <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+ </li>
+
+ <li class="faq-list-item">
+    <div class="faq-wrap">
+      <h3 class="faq-sub-tittle">What does the process of developing a software product look like from idea to implementation?</h3>
+        <svg width="48" height="48" class="faq-icon">
+          <use href="/portfolio-project-14/"></use>
+        </svg>
+    </div>
+  <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+ </li>
+</ul>
+    </div>
+</section>
+    <section class="reviews">
+    <div class="container reviews-container">
+
+    </div>
+</section>
+    <section class="work_togather">
+    <div class="container work-container">
+<h3 class="work-sub-tittle">Contact me to transform your ideas into exceptional solutions.</h3>
+<ul class="work-list">
+
+<li class="work-list-item">
+    <a href="/">
+    <svg width="48" height="48" class="work-icon">
+        <use href="/portfolio-project-14/"></use>
+    </svg>
+    +38 090 456 78 90
+    </a>
+</li>
+
+<li class="work-list-item">
+    <a href="/">
+    <svg width="48" height="48" class="work-icon">
+        <use href="/portfolio-project-14/"></use>
+    </svg>
+    lloydjefferson@gmail.com
+    </a>
+</li>
+
+<li class="work-list-item">
+    <a href="/">
+    <svg width="48" height="48" class="work-icon">
+        <use href="/portfolio-project-14/"></use>
+    </svg>
+    USA, New York    
+</a>
+</li>
+
+</ul>
+
+<!--form-->
+<form class="form" action="#"> 
+ <div class="form-block">
+    <label class="form-label" for="user-email">Email</label>
+       <input class="form-input-name" type="email" id="user-email" name="user-email" >
+    </div>
+ 
+    <div class="form-label-textarea">
+       <label class="form-label" for="user-comment">Comment
+       <textarea class="input-textarea" id="user-comment" name="user-comment" 
+       placeholder="Text input"></textarea>
+ </label>
+    </div>
+ 
+     <button class="form-btn" type="submit">Send</button>
+ </form>
+    </div>
+<!--modal-->
+
+</section>
+    </main>
+
+    <footer>
+      <div class="container footer-container">
+    <a class="footer-logo-link" href="/">
+        <p> Lloyd <span class="footer-logo-span">Jefferson.</span></p>
+    </a>
+    <ul class="footer-list">
+        <li class="footer-list-item">
+            <a class="footer-list-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+        </li>
+        <li class="footer-list-item">
+            <a class="footer-list-link" href="https://www.youtube.com/c/GoIT" target="_blank">Facebook</a>
+        </li>
+        <li class="footer-list-item">
+            <a class="footer-list-link" href="https://www.facebook.com/goITclub/" target="_blank">Linkedin</a>
+        </li>
+        <li class="footer-list-item">
+            <a class="footer-list-link" href="https://github.com/Kate-Iva/portfolio-project-14" target="_blank">GitHub</a>
+        </li>
+        </ul>
+    <p>© Copyright 2024. Made by LloydJefferson</p>
+</div>
+    </footer>
     
   </body>
 </html>
