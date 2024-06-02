@@ -1,33 +1,32 @@
 body {
-    font-family: 'Montserrat', 'Poppins', sans-serif;
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  padding: 0px 16px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 320px) {
   .container {
-    width: 100%;
-    padding: 0px 16px;
-    margin: 0 auto;
-    overflow: hidden;
+    max-width: 360px;
+    padding: 0 20px;
   }
-  
-  @media screen and (min-width: 320px) {
-    .container {
-      max-width: 360px;
-      padding: 0 20px;
-    }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-      padding: 0 32px;
-    }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
   }
-  
-  @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1280px;
-    }
-  }
-  
+}
