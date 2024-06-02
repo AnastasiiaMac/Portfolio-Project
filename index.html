@@ -19,7 +19,7 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/portfolio-project-14/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/portfolio-project-14/assets/index-736b8e6d.css">
+    <link rel="stylesheet" href="/portfolio-project-14/assets/index-06637b59.css">
   </head>
   <body>
 
@@ -27,16 +27,19 @@
     <div class="header">
 <div class="container header-container">
   <a class="header-logo-link" href="/">
-      <p> Lloyd <span class="header-logo-span">Jefferson.</span></p>
+      <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
   </a>
-  <a class="header-menu-open-btn" 
-  href="/" target="_blank" 
-  rel="noopener noreferrer">=
-      <svg width="24" height="24" class="header-menu-open-icon-">
-          <use href="/portfolio-project-14/"></use>
-      </svg>
-   </a>
-   
+  <button
+  class="menu-open_btn"
+  type="button"
+  id="menu-open_btn"
+  title="Button for open mobile menu"
+>
+<svg width="32" height="32" class="menu-open-icon">
+    <use href="/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-open"></use>
+</svg>
+</button>
+    
    <nav class="header-nav">
           <ul class="header-nav-list">
               <li class="header-nav-list-item">
@@ -56,22 +59,27 @@
               </li>
           </ul>
       </nav>
-
+</div>
 
 <!--mobile_menu-->
-<div class="mob-container" id="mob-menu">
+<div class="mobile-menu" id="mobile-menu">
 
-<a class="mob-logo-link" href="#">
-  <p> Lloyd <span class="header-logo-span">Jefferson.</span></p>
-</a>
 
-<a class="mob-menu-close-btn" 
-href="/" target="_blank" 
-rel="noopener noreferrer">X
-<svg width="24" height="24" class="mob-menu-close-icon">
-<use href="/portfolio-project-14/"></use>
-</svg>
-</a>
+    <div class="mob-menu-wrap container">
+    <a class="header-logo-link" href="/">
+        <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
+    </a>
+    <button
+      type="button"
+      class="close-mobile-menu"
+      id="close-mobile-menu"
+      name="Close mobile menu"
+    >
+      <svg class="close-btn-icon" width="32" height="32">
+        <use href="/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-close"></use>
+      </svg>
+    </button>
+</div>
 
 <nav class="mob-nav">
 <ul class="mob-nav-list">
@@ -92,7 +100,7 @@ rel="noopener noreferrer">X
   </li>
 </ul>
 </nav>
-</div>
+
 </div>
 </div>
     </header>
