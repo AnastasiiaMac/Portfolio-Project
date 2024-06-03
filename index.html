@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/portfolio-project-14/favicon.svg" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-    integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
-  rel="stylesheet">
-  
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     
+    <!-- <link id="theme-stylesheet" rel="stylesheet" /> -->
     <script type="module" crossorigin src="/portfolio-project-14/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-project-14/assets/vendor-0177c146.js">
     <link rel="stylesheet" href="/portfolio-project-14/assets/vendor-ed6a6904.css">
-    <link rel="stylesheet" href="/portfolio-project-14/assets/index-e8382a52.css">
+    <link rel="stylesheet" href="/portfolio-project-14/assets/index-d1b2c223.css">
   </head>
-  <body>
-
+  <body class="light-mode">
     <header>
-    <div class="header">
+      <div class="header">
+
+  <div class="container header-container">
+
 <div class="container header-container">
   <a class="header-logo-link" href="/">
       <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
@@ -68,47 +73,85 @@
 
 
     <div class="mob-menu-wrap container">
+
     <a class="header-logo-link" href="/">
-        <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
+      <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
     </a>
     <button
+      class="menu-open_btn"
       type="button"
-      class="close-mobile-menu"
-      id="close-mobile-menu"
-      name="Close mobile menu"
+      id="menu-open_btn"
+      title="Button for open mobile menu"
     >
+
+      <svg width="32" height="32" class="menu-open-icon">
+        <use href="/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-open"></use>
+
       <svg class="close-btn-icon" width="32" height="32">
         <use href="/portfolio-project-14/assets/icons-f259c861.svg#icon-close"></use>
+
       </svg>
     </button>
+
+    <div class="header-nav-toggle">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <a href="#about_me" class="header-nav-list-link"> About me </a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#projects" class="header-nav-list-link"> Projects </a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#contacts" class="header-nav-list-link"> Contacts </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-toggle">
+        <input type="checkbox" class="check-input" id="toggleCheckbox" />
+        <label for="toggleCheckbox" class="check-text"></label>
+      </div>
+    </div>
+  </div>
+
+  <!--mobile_menu-->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mob-menu-wrap container">
+      <a class="header-logo-link" href="/">
+        <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
+      </a>
+      <button
+        type="button"
+        class="close-mobile-menu"
+        id="close-mobile-menu"
+        name="Close mobile menu"
+      >
+        <svg class="close-btn-icon" width="32" height="32">
+          <use href="/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mob-nav">
+      <ul class="mob-nav-list">
+        <li class="mob-nav-list-item">
+          <a href="#about_me" class="mob-nav-list-link"> About me </a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#projects" class="mob-nav-list-link"> Projects </a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#contacts" class="mob-nav-list-link"> Contacts </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
-<nav class="mob-nav">
-<ul class="mob-nav-list">
-  <li class="mob-nav-list-item">
-      <a href="#about_me" class="mob-nav-list-link" >
-        About me
-      </a>
-  </li>
-  <li class="mob-nav-list-item">
-      <a href="#projects" class="mob-nav-list-link" >
-          Projects
-      </a>
-  </li>
-  <li class="mob-nav-list-item">
-      <a href="#contacts" class="mob-nav-list-link" >
-          Contacts
-        </a>
-  </li>
-</ul>
-</nav>
-
-</div>
-</div>
     </header>
 
     <main>
-    <section class="hero">
+      <section class="hero">
 
     <div class="container hero_container">
 
@@ -149,7 +192,7 @@
 
     </div>
 </section>
-    <section class="about-me section" id="about_me">
+      <section class="about-me section" id="about_me">
   <div class="about-me-container container">
     <h2 class="about-title">ABOUT <span class="me">ME</span></h2>
     <div class="bio">
@@ -212,7 +255,7 @@
   </div>
 </section>
 
-    <section class="skills">
+      <section class="skills">
     <div class="container skills-container">
         <h2 class="skills-tittle visually-hidden">Tech skills</h2>
          <div class="ticker-above">
@@ -256,7 +299,7 @@
     </div>
 
 </section>
-    <section class="projects" id="projects">
+      <section class="projects" id="projects">
     <div class="container projects-container">
     <h2 class="projects-tittle">MY <span>PROJECTS</span></h2>
 <ul class="projects-list">
@@ -309,7 +352,7 @@
 <button class="load-more-button">LOAD MORE</button>
 </div>
 </section>
-    <section class="benefits">
+      <section class="benefits">
   <h2 class="benefits-head">
     <span class="benefits-head-green">BENEFITS</span> OF WORKING WITH ME
   </h2>
@@ -365,7 +408,7 @@
   </ul>
 </section>
 
-    <section class="faq light">
+      <section class="faq light">
   <div class="container">
     <h2 class="faq__title light">Frequently asked <span class="title__accent">question</span></h2>
     <ul class="accordion-container">
@@ -466,7 +509,7 @@
     </ul>
   </div>
 </section>
-    <section class="reviews">
+      <section class="reviews">
   <div class="container reviews-container">
     <h2 class="reviews-title">reviews</h2>
     <div class="swiper">
@@ -487,7 +530,7 @@
   </div>
 </section>
 
-    <section class="work_togather" id="contacts">
+      <section class="work_togather" id="contacts">
   <div class="container work-container">
     <h2 class="work-title">
       <span class="work-title-span">let's</span> work<br />
@@ -574,7 +617,7 @@
   </div>
 </section>
 
-    
+      
     </main>
 
     <footer>
