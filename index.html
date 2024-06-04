@@ -24,7 +24,7 @@
     <script type="module" crossorigin src="/portfolio-project-14/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-project-14/assets/vendor-0177c146.js">
     <link rel="stylesheet" href="/portfolio-project-14/assets/vendor-ed6a6904.css">
-    <link rel="stylesheet" href="/portfolio-project-14/assets/index-def9ea39.css">
+    <link rel="stylesheet" href="/portfolio-project-14/assets/index-a4f769a0.css">
   </head>
   <body class="light-mode">
     <header>
@@ -543,22 +543,27 @@
         </ul>
       </div>
       <!--form-->
-      <form class="form" action="#">
+      <form novalidate class="form" action="#">
         <div class="form-block">
           <label class="form-label" for="user-email">Email</label>
           <input
+            required
             class="form-input-name"
-            type="email"
+            type="text"
             id="user-email"
             name="user-email"
             placeholder="Your email*"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
+          <span class="work-invalid-email d-none"
+            >Invalid email, try again</span
+          >
         </div>
 
         <div class="form-label-textarea">
           <label class="form-label" for="user-comment">Comment</label>
           <textarea
+            required
             class="input-textarea"
             id="user-comment"
             name="user-comment"
