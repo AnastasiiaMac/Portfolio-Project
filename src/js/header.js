@@ -2,19 +2,24 @@ const hamburgerBtn = document.getElementById('menu-open_btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const closedMobileMenuBtn = document.getElementById('close-mobile-menu');
 const headerMenu = document.querySelectorAll('.mob-nav-list li');
-const modal = document.querySelector('.modal')
+const modal = document.querySelector('.modal');
+const checkbox = document.querySelector('.check-input');
+const body = document.body;
 
 hamburgerBtn.addEventListener('click', function() {
     mobileMenu.style.transform = 'translateY(0)';
+    body.classList.toggle('noScroll');
 });
 
 closedMobileMenuBtn.addEventListener('click', function() {
     mobileMenu.style.transform = 'translateY(-100%)';
+    body.classList.toggle('noScroll');
 });
 
 headerMenu.forEach(item => {
     item.addEventListener('click', function() {
         mobileMenu.style.transform = 'translateY(-100%)';
+        body.classList.toggle('noScroll');
     });
 });
 
@@ -34,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-const checkbox = document.querySelector('.check-input');
-const body = document.body;
+
 body.classList.add('light-mode');
 checkbox.checked = false;
 localStorage.removeItem('theme');
@@ -78,3 +82,8 @@ const applyThemeToModal = () => {
 }
 }
 
+window.addEventListener('resize', () => {
+    if (window.outerWidth >= 768) {
+        mobileMenu.style.transform = 'translateY(-100%)';   
+    }
+})
