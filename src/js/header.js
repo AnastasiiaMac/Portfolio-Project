@@ -81,9 +81,3 @@ const applyThemeToModal = () => {
         modal.classList.remove('dark-mode');
 }
 }
-
-window.addEventListener('resize', () => {
-    if (window.outerWidth >= 768) {
-        mobileMenu.style.transform = 'translateY(-100%)';   
-    }
-})
